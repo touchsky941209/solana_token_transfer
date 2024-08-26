@@ -4,7 +4,10 @@ import { SolanaTokenTransfer } from "../target/types/solana_token_transfer";
 
 describe("solana_token_transfer", () => {
   // Configure the client to use the local cluster.
+  // Configure the client to use the local cluster.
+  
   anchor.setProvider(anchor.AnchorProvider.env());
+  
 
   const program = anchor.workspace.SolanaTokenTransfer as Program<SolanaTokenTransfer>;
 
