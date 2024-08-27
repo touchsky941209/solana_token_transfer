@@ -13,6 +13,7 @@ describe("solana_token_transfer", () => {
 
   it("Is initialized!", async () => {
     // Add your test here.
+     // Add your test here.
     const tx = await program.methods.initialize().rpc();
     console.log("Your transaction signature", tx);
   });
