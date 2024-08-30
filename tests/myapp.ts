@@ -12,5 +12,7 @@ describe("myapp", () => {
     // Add your test here.
     const tx = await program.methods.initialize().rpc();
     console.log("Your transaction signature", tx);
+
+    console.log("This is test transaction");
   });
 });
