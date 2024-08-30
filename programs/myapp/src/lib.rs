@@ -1,9 +1,9 @@
 use anchor_lang::prelude::*;
 
-declare_id!("FgzRLHDfd36md7g5jm8igzAkyfVdC7MXTEJpU7xTLW3K");
+declare_id!("9ZYjYpXLYgD6EDWzDSUaugddxo1eYPwXbGMWkNmWo54a");
 
 #[program]
-pub mod solana_token_transfer {
+pub mod myapp {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
