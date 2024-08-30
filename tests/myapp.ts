@@ -16,6 +16,8 @@ describe("myapp", () => {
 
     console.log("This is test transaction");
     console.log("This is test transaction");
+
+    console.log("This is test transaction");    
     console.log("This is test transaction");
   });
 });
