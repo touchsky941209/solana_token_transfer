@@ -1,22 +1,16 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { Myapp } from "../target/types/myapp";
+import { NewContract } from "../target/types/new_contract";
 
-describe("myapp", () => {
+describe("new-contract", () => {
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
 
-  const program = anchor.workspace.Myapp as Program<Myapp>;
+  const program = anchor.workspace.NewContract as Program<NewContract>;
 
   it("Is initialized!", async () => {
     // Add your test here.
     const tx = await program.methods.initialize().rpc();
     console.log("Your transaction signature", tx);
-
-
-    console.log("This is test transaction");
-    console.log("This is test transaction");
-
-    console.log("This is test transaction");    
   });
 });
